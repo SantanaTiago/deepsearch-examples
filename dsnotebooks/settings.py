@@ -32,6 +32,11 @@ class KGProjectNotebookSettings(ProjectNotebookSettings):
         return v or input("Knowledge graph key: ")
 
 
+class CopyCollDocumentNotebookSettings(ProjectNotebookSettings):
+    index_key: str = ""
+    document_name: str = ""
+
+
 class CollOptionalNotebookSettings(NotebookSettings):
     proj_key: Optional[str] = None
     index_key: Optional[str] = None
